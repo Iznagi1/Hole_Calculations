@@ -1,0 +1,2 @@
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc libAlgorithm_lib.a CMakeFiles/Algorithm_lib.dir/Algorithm/Algorithm.cpp.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe libAlgorithm_lib.a

@@ -1,0 +1,2 @@
+error: D:\Hole_Calculations\vcpkg.json was rejected because it uses "version>=" and does not have a "builtin-baseline". This can be fixed by removing the uses of "version>=" or adding a "builtin-baseline".
+See `vcpkg help versioning` for more information.

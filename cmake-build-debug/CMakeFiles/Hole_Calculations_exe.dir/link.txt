@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\Hole_Calculations_exe.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc CMakeFiles\Hole_Calculations_exe.dir/objects.a @CMakeFiles\Hole_Calculations_exe.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\Hole_Calculations_exe.dir/objects.a -Wl,--no-whole-archive -o Hole_Calculations_exe.exe -Wl,--out-implib,libHole_Calculations_exe.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Hole_Calculations_exe.dir\linkLibs.rsp

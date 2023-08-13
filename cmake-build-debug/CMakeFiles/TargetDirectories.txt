@@ -1,0 +1,6 @@
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/Objects_lib.dir
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/Algorithm_lib.dir
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/Display_lib.dir
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/Hole_Calculations_exe.dir
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Hole_Calculations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
