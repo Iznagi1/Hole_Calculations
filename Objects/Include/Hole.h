@@ -2,8 +2,8 @@
 // Created by User on 06.08.2023.
 //
 
-#ifndef OBJECTS_HOLE_H
-#define OBJECTS_HOLE_H
+#ifndef HOLE_H
+#define HOLE_H
 
 #include "Circle.h"
 #include "Alarm.h"
@@ -18,22 +18,25 @@ class Hole : public Object {
 
 public:
     explicit Hole(int id, double innerRadius, double externalRadius);
+
     int GetId() const;
-    Point GetCenter() const;
+
     CircleType GetInnerCircle() const;
+
     CircleType GetExternalCircle() const;
 
-    void SetInnerCircle(const CircleType& circle);
-    void SetExternalCircle(const CircleType& circle);
-    void SetCenter(const Point& p);
-    void Print() const;
+    void SetInnerCircle(const CircleType &circle);
 
-    double GetDistance(const Point& p) const override;
+    void SetExternalCircle(const CircleType &circle);
+
+    void SetCenter(const Point &p);
+
+    double GetDistance(const Point &p) const override;
+
     bool IsValid() const override;
-    bool operator<(const Hole& other) const;
 
-
+    bool operator<(const Hole &other) const;
 };
 
 
-#endif //OBJECTS_HOLE_H
+#endif //HOLE_H

@@ -22,9 +22,21 @@
 	<!-- Круги которые необходимо разместить -->	
 	<circles>
 		<circle id = "0" inner_rad = "12" outter_rad = "20"> </circle>
-		<circle id = "1" inner_rad = "25" outter_rad = "30"> </circle>
-		<circle id = "2" inner_rad = "32" outter_rad = "35"> </circle>
-		<circle id = "3" inner_rad = "25" outter_rad = "30"> </circle>
-		<circle id = "4" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+		<circle id = "1" inner_rad = "12" outter_rad = "20"> </circle>
+
+
+
+
+
+
+
+
+
+
 	</circles>
 </data>

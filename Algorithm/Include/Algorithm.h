@@ -15,7 +15,7 @@ class Algorithm {
 
     static bool IsHole(std::unique_ptr<Object> &);
 
-    static double GetSumOfDistance(const Point &p, const Hole &hole, std::vector<std::unique_ptr<Object>> &objects);
+    static double GetSumOfDistance(const Point &p, std::vector<std::unique_ptr<Object>> &objects);
 
     static double GetMinDistanceToHole(const Point &p, std::vector<std::unique_ptr<Object>> &objects);
 

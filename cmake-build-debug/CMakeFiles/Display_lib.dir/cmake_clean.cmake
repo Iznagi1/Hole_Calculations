@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Display_lib.dir/Display/Display.cpp.obj"
-  "CMakeFiles/Display_lib.dir/Display/Display.cpp.obj.d"
+  "CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj"
+  "CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj.d"
   "libDisplay_lib.a"
   "libDisplay_lib.pdb"
 )

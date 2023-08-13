@@ -8,8 +8,10 @@
 #include "Point.h"
 
 class Shape {
-    virtual double GetDistance(const Point& p1) const = 0;
-    virtual bool IsInside(const Point& p1) const = 0;
+    virtual double GetDistance(const Point &p1) const = 0;
+
+    virtual bool IsInside(const Point &p1) const = 0;
+
     virtual bool IsValid() const = 0;
 };
 

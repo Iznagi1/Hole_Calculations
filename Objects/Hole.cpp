@@ -23,11 +23,11 @@ CircleType Hole::GetExternalCircle() const {
     return externalCircle;
 }
 
-void Hole::SetInnerCircle(const CircleType& circle) {
+void Hole::SetInnerCircle(const CircleType &circle) {
     innerCircle = circle;
 }
 
-void Hole::SetExternalCircle(const CircleType& circle) {
+void Hole::SetExternalCircle(const CircleType &circle) {
     externalCircle = circle;
 }
 
@@ -35,24 +35,16 @@ double Hole::GetDistance(const Point &p) const {
     return externalCircle.GetDistance(p);
 }
 
-void Hole::Print() const {
-    std::cout << id << ' ' << innerCircle.GetRadius() << ' ' << externalCircle.GetRadius() << std::endl;
-    std::cout << center.x << ' ' << center.y << std::endl;
-}
 
 bool Hole::IsValid() const {
     return innerCircle.IsValid() && externalCircle.IsValid();
 }
 
-bool Hole::operator<(const Hole& other) const {
+bool Hole::operator<(const Hole &other) const {
     return innerCircle.GetRadius() < other.GetInnerCircle().GetRadius();
 }
 
-Point Hole::GetCenter() const {
-    return center;
-}
-
-void Hole::SetCenter(const Point& p) {
+void Hole::SetCenter(const Point &p) {
     center = p;
     innerCircle.SetCenter(center);
     externalCircle.SetCenter(center);

@@ -160,10 +160,9 @@ CMakeFiles/Hole_Calculations_exe.dir/io_tools/XMLParser.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
  D:/Hole_Calculations/Objects/Include/Hole.h \
  D:/Hole_Calculations/Objects/Include/Circle.h \
- D:/Hole_Calculations/Objects/Geometry/Point.h \
+ D:/Hole_Calculations/Objects/Include/Point.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
- D:/Hole_Calculations/Objects/Geometry/Shape.h \
- D:/Hole_Calculations/Objects/Geometry/Point.h \
+ D:/Hole_Calculations/Objects/Include/Shape.h \
  D:/Hole_Calculations/Objects/Include/Alarm.h \
  D:/Hole_Calculations/Objects/Include/Rectangle.h \
  D:/Hole_Calculations/Objects/Include/Object.h \

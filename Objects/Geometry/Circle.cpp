@@ -4,7 +4,6 @@
 
 #include <stdexcept>
 #include <string>
-#include <valarray>
 #include "Circle.h"
 
 
@@ -40,9 +39,10 @@ void CircleType::SetRadius(double x) {
     radius = x;
 }
 
-double CircleType::GetDistance(const Point& p1) const {
+double CircleType::GetDistance(const Point &p1) const {
     double distance = ::GetDistance(p1, center);
-    return distance;
+    if (distance <= radius) { return 0; }
+    return distance - radius;
 }
 
 bool CircleType::IsInside(const Point &p1) const {

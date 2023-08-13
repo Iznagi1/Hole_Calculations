@@ -158,21 +158,6 @@ CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Hole_Calculations\Objects\Geometry\Point.cpp -o CMakeFiles\Objects_lib.dir\Objects\Geometry\Point.cpp.s
 
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj: CMakeFiles/Objects_lib.dir/flags.make
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj: CMakeFiles/Objects_lib.dir/includes_CXX.rsp
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj: D:/Hole_Calculations/Objects/Geometry/Segment.cpp
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj: CMakeFiles/Objects_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj -MF CMakeFiles\Objects_lib.dir\Objects\Geometry\Segment.cpp.obj.d -o CMakeFiles\Objects_lib.dir\Objects\Geometry\Segment.cpp.obj -c D:\Hole_Calculations\Objects\Geometry\Segment.cpp
-
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Hole_Calculations\Objects\Geometry\Segment.cpp > CMakeFiles\Objects_lib.dir\Objects\Geometry\Segment.cpp.i
-
-CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Hole_Calculations\Objects\Geometry\Segment.cpp -o CMakeFiles\Objects_lib.dir\Objects\Geometry\Segment.cpp.s
-
 # Object files for target Objects_lib
 Objects_lib_OBJECTS = \
 "CMakeFiles/Objects_lib.dir/Objects/Alarm.cpp.obj" \
@@ -180,8 +165,7 @@ Objects_lib_OBJECTS = \
 "CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj" \
 "CMakeFiles/Objects_lib.dir/Objects/Geometry/Circle.cpp.obj" \
 "CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj" \
-"CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj" \
-"CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj"
+"CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj"
 
 # External object files for target Objects_lib
 Objects_lib_EXTERNAL_OBJECTS =
@@ -192,10 +176,9 @@ libObjects_lib.a: CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj
 libObjects_lib.a: CMakeFiles/Objects_lib.dir/Objects/Geometry/Circle.cpp.obj
 libObjects_lib.a: CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj
 libObjects_lib.a: CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj
-libObjects_lib.a: CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj
 libObjects_lib.a: CMakeFiles/Objects_lib.dir/build.make
 libObjects_lib.a: CMakeFiles/Objects_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libObjects_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libObjects_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\Objects_lib.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Objects_lib.dir\link.txt --verbose=$(VERBOSE)
 

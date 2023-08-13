@@ -10,27 +10,25 @@ Field::Field(Point leftDown, Point rightUp) {
 }
 
 double Field::GetDistance(const Point &p) const {
-//    p.Print();
-//    std::cout << base.GetDistance(p) << std::endl;
-    return base.GetDistance(p);
+    throw std::runtime_error(std::string("Logic error: no need use GetDistance for Field"));
 }
 
-void Field::Print() const {
-    std::cout << "x= " << base.GetCenterX() - base.GetWidth() / 2 << " y= " << base.GetCenterY() - base.GetHeight() / 2
-              << " x= " << base.GetCenterX() + base.GetWidth() / 2 << " y= " << base.GetCenterY() + base.GetHeight() / 2
-              << std::endl;
-}
 
 bool Field::IsValid() const {
     return base.IsValid();
 }
 
-std::pair<std::pair<double, double>, std::pair<double, double>> Field::GetMarkup() const {
+std::pair<std::pair<double, double>, std::pair<double, double>> Field::GetRanges() const {
     double minX = base.GetCenterX() - base.GetWidth() / 2;
     double maxX = base.GetCenterX() + base.GetWidth() / 2;
     double minY = base.GetCenterY() - base.GetHeight() / 2;
     double maxY = base.GetCenterY() + base.GetHeight() / 2;
 
 
-    return {{minX, maxX}, {minY, maxY}};
+    return {{minX, maxX},
+            {minY, maxY}};
+}
+
+RectangleType Field::GetBase() const {
+    return base;
 }

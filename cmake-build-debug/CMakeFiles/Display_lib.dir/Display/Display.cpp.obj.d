@@ -277,6 +277,7 @@ CMakeFiles/Display_lib.dir/Display/Display.cpp.obj: \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/gl/freeglut_std.h \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/GL/gl.h \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/GL/glu.h \
+ C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/gl/glu.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \

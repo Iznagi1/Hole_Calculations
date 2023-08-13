@@ -10,17 +10,16 @@ Alarm::Alarm(Point leftDown, Point rightUp) {
 }
 
 double Alarm::GetDistance(const Point &p) const {
+    if (base.IsInside(p)) { return 0; }
     return base.GetDistance(p);
-}
-
-void Alarm::Print() const {
-    std::cout << "x= " << base.GetCenterX() - base.GetWidth() / 2 << " y= " << base.GetCenterY() - base.GetHeight() / 2
-              << " x= " << base.GetCenterX() + base.GetWidth() / 2 << " y= " << base.GetCenterY() + base.GetHeight() / 2
-              << std::endl;
 }
 
 bool Alarm::IsValid() const {
     return base.IsValid();
+}
+
+RectangleType Alarm::GetBase() const {
+    return base;
 }
 
 

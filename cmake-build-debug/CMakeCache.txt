@@ -323,6 +323,12 @@ Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=C:/Users/User/.vcpkg-clion/vcpkg/installed
 
+//The directory containing a CMake configuration file for glfw3.
+glfw3_DIR:PATH=C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3
+
+//The directory containing a CMake configuration file for glui.
+glui_DIR:PATH=C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui
+
 //The directory containing a CMake configuration file for pugixml.
 pugixml_DIR:PATH=C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/pugixml
 

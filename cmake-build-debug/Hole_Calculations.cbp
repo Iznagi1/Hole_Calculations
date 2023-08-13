@@ -5,7 +5,7 @@
 		<Option title="Hole_Calculations"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Users\;CMake Files\Users\User\;CMake Files\Users\User\.vcpkg-clion\;CMake Files\Users\User\.vcpkg-clion\vcpkg\;CMake Files\Users\User\.vcpkg-clion\vcpkg\scripts\;CMake Files\Users\User\.vcpkg-clion\vcpkg\scripts\buildsystems\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\freeglut\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\pugixml\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Users\;CMake Files\Users\User\;CMake Files\Users\User\.vcpkg-clion\;CMake Files\Users\User\.vcpkg-clion\vcpkg\;CMake Files\Users\User\.vcpkg-clion\vcpkg\scripts\;CMake Files\Users\User\.vcpkg-clion\vcpkg\scripts\buildsystems\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\freeglut\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\;CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\pugixml\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Hole_Calculations/cmake-build-debug"/>
@@ -118,6 +118,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DGLFW_DLL"/>
 					<Add directory="D:/Hole_Calculations/Display/Include"/>
 					<Add directory="D:/Hole_Calculations/Objects/Include"/>
 					<Add directory="C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
@@ -143,6 +144,7 @@
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DGLFW_DLL"/>
 					<Add directory="D:/Hole_Calculations/Display/Include"/>
 					<Add directory="D:/Hole_Calculations/Objects/Include"/>
 					<Add directory="C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
@@ -239,7 +241,7 @@
 		<Unit filename="D:/Hole_Calculations/Algorithm/Algorithm.cpp">
 			<Option target="Algorithm_lib"/>
 		</Unit>
-		<Unit filename="D:/Hole_Calculations/Display/Display.cpp">
+		<Unit filename="D:/Hole_Calculations/Display/DisplayTools.cpp">
 			<Option target="Display_lib"/>
 		</Unit>
 		<Unit filename="D:/Hole_Calculations/Objects/Alarm.cpp">
@@ -254,22 +256,13 @@
 		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Point.cpp">
 			<Option target="Objects_lib"/>
 		</Unit>
-		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Point.h">
-			<Option target="Objects_lib"/>
-		</Unit>
 		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Rectangle.cpp">
 			<Option target="Objects_lib"/>
 		</Unit>
-		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Segment.cpp">
-			<Option target="Objects_lib"/>
-		</Unit>
-		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Segment.h">
-			<Option target="Objects_lib"/>
-		</Unit>
-		<Unit filename="D:/Hole_Calculations/Objects/Geometry/Shape.h">
-			<Option target="Objects_lib"/>
-		</Unit>
 		<Unit filename="D:/Hole_Calculations/Objects/Hole.cpp">
+			<Option target="Objects_lib"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Objects/Include/Shape.h">
 			<Option target="Objects_lib"/>
 		</Unit>
 		<Unit filename="D:/Hole_Calculations/io_tools/XMLParser.cpp">
@@ -301,6 +294,39 @@
 		</Unit>
 		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/freeglut/FreeGLUTTargets.cmake">
 			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\freeglut\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/gluiConfig.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/gluiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/gluiTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/gluiTargets-release.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/gluiTargets.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glui/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glui\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
 		</Unit>
 		<Unit filename="D:/Hole_Calculations/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/share/pugixml/pugixml-config-version.cmake">
 			<Option virtualFolder="CMake Files\Users\User\.vcpkg-clion\vcpkg\installed\x64-windows\share\pugixml\"/>

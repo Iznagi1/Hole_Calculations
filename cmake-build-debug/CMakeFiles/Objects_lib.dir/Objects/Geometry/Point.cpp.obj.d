@@ -1,6 +1,6 @@
 CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj: \
  D:\Hole_Calculations\Objects\Geometry\Point.cpp \
- D:\Hole_Calculations\Objects\Geometry\Point.h \
+ D:/Hole_Calculations/Objects/Include/Point.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

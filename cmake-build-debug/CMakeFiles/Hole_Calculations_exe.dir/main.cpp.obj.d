@@ -185,14 +185,13 @@ CMakeFiles/Hole_Calculations_exe.dir/main.cpp.obj: \
  D:/Hole_Calculations/Objects/Include/Circle.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
- D:/Hole_Calculations/Objects/Geometry/Point.h \
- D:/Hole_Calculations/Objects/Geometry/Shape.h \
- D:/Hole_Calculations/Objects/Geometry/Point.h \
+ D:/Hole_Calculations/Objects/Include/Point.h \
+ D:/Hole_Calculations/Objects/Include/Shape.h \
  D:/Hole_Calculations/Objects/Include/Alarm.h \
  D:/Hole_Calculations/Objects/Include/Rectangle.h \
  D:/Hole_Calculations/Objects/Include/Object.h \
  D:/Hole_Calculations/Objects/Include/Field.h \
- D:/Hole_Calculations/Display/Include/Display.h \
+ D:/Hole_Calculations/Display/Include/DisplayTools.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/x86_64-w64-mingw32/include/windows.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/x86_64-w64-mingw32/include/excpt.h \
@@ -442,16 +441,8 @@ CMakeFiles/Hole_Calculations_exe.dir/main.cpp.obj: \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/gl/freeglut_std.h \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/GL/gl.h \
  C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/GL/glu.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+ C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/include/gl/glu.h \
+ D:/Hole_Calculations/Objects/Include/Alarm.h \
  D:\Hole_Calculations\io_tools/XMLParser.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
  C:/Program\ Files/JetBrains/CLion\ 2023.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \

@@ -7,8 +7,8 @@
 #include <memory>
 #include <numeric>
 #include <iostream>
-#include <valarray>
 #include <cfloat>
+#include <valarray>
 #include "Algorithm.h"
 
 void Algorithm::ValidateData(std::vector<Alarm> &alarms, std::vector<Hole> &holes, const Field &field) {
@@ -20,10 +20,9 @@ void Algorithm::ValidateData(std::vector<Alarm> &alarms, std::vector<Hole> &hole
     }
 }
 
-double Algorithm::GetSumOfDistance(const Point &p, const Hole &hole, std::vector<std::unique_ptr<Object>> &objects) {
-    return std::accumulate(objects.begin(), objects.end(), 0., [&p, &hole](double acc, std::unique_ptr<Object> &obj) {
-        return acc + obj->GetDistance(p) -
-               (IsHole(obj) ? hole.GetExternalCircle().GetRadius() : hole.GetInnerCircle().GetRadius());
+double Algorithm::GetSumOfDistance(const Point &p, std::vector<std::unique_ptr<Object>> &objects) {
+    return std::accumulate(objects.begin(), objects.end(), 0., [&p](double acc, std::unique_ptr<Object> &obj) {
+        return acc + std::log(obj->GetDistance(p));
     });
 }
 
@@ -52,6 +51,7 @@ double Algorithm::GetMinDistanceToHole(const Point &p, std::vector<std::unique_p
     if (ptr == objects.end() || !IsHole(*ptr)) {
         return DBL_MAX;
     }
+
     return (*ptr)->GetDistance(p);
 }
 
@@ -63,23 +63,21 @@ Algorithm::TernarySearchOnY(const std::pair<double, double> &range, double x, co
     right -= hole.GetInnerCircle().GetRadius() + EPS;
     while (right - left > EPS) {
         double mid1 = left + (right - left) / 3, mid2 = right - (right - left) / 3;
-//        std::cout << GetSumOfDistance(Point(x, mid1), hole, objects) << ' ' << GetSumOfDistance(Point(x, mid2), hole, objects) << std::endl;
-        if (GetSumOfDistance(Point(x, mid1), hole, objects) < GetSumOfDistance(Point(x, mid2), hole, objects)) {
+        if (GetSumOfDistance(Point(x, mid1), objects) < GetSumOfDistance(Point(x, mid2), objects)) {
             left = mid1;
         } else {
             right = mid2;
         }
     }
-    return {left, GetSumOfDistance(Point(x, left), hole, objects)};
+    return {left, GetSumOfDistance(Point(x, left), objects)};
 }
 
 bool Algorithm::CalculateHole(Hole &hole, std::vector<std::unique_ptr<Object>> &objects, const Field &field) {
-    auto [xRange, yRange] = field.GetMarkup();
+    auto [xRange, yRange] = field.GetRanges();
     auto [left, right] = xRange;
     double radius = hole.GetInnerCircle().GetRadius();
     left += radius + EPS;
     right -= radius + EPS;
-    std::cout << left << ' ' << right << std::endl;
 
     while (right - left > EPS) {
         double mid1 = left + (right - left) / 3, mid2 = right - (right - left) / 3;
@@ -91,15 +89,7 @@ bool Algorithm::CalculateHole(Hole &hole, std::vector<std::unique_ptr<Object>> &
         }
     }
     Point res = Point(left, TernarySearchOnY(yRange, left, hole, objects).first);
-    std::cout << "OUTPUT:\n";
-    res.Print();
 
-//    hole.SetCenter(Point(left, TernarySearchOnY(yRange, left, radius, objects).first));
-//    objects.push_back(std::make_unique<Hole>(Hole(hole)));
-//    return true;
-    std::cout << "Zabor " << GetMinDistanceToBorders(res, objects) << " " << radius << std::endl;
-    std::cout << "Dirka " << GetMinDistanceToHole(res, objects) << " " << hole.GetExternalCircle().GetRadius()
-              << std::endl;
     if (GetMinDistanceToBorders(res, objects) > radius &&
         GetMinDistanceToHole(res, objects) > hole.GetExternalCircle().GetRadius()) {
         hole.SetCenter(Point(left, TernarySearchOnY(yRange, left, hole, objects).first));
@@ -112,7 +102,7 @@ bool Algorithm::CalculateHole(Hole &hole, std::vector<std::unique_ptr<Object>> &
 bool Algorithm::CalculateHoles(std::vector<Alarm> &alarms, std::vector<Hole> &holes, const Field &field) {
     ValidateData(alarms, holes, field);
     std::vector<std::unique_ptr<Object>> objects;
-    objects.reserve(alarms.size() + 1);
+    objects.reserve(alarms.size());
     for (const auto &alarm: alarms) {
         objects.push_back(std::make_unique<Alarm>(Alarm(alarm)));
     }

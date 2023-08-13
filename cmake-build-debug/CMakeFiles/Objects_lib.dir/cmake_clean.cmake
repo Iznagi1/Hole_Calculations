@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj.d"
   "CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj"
   "CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj.d"
-  "CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj"
-  "CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj.d"
   "CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj"
   "CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj.d"
   "libObjects_lib.a"

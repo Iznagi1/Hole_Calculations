@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<!-- Положения кругов  -->
+	<circles>
+		<circle id = "0" x = "-30" y = "0"> </circle>
+		<circle id = "1" x = "30" y = "0"> </circle>
+		<!-- ................................... -->
+	</circles>
+</data>

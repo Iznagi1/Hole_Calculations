@@ -116,6 +116,9 @@ Hole_Calculations_exe.exe: libDisplay_lib.a
 Hole_Calculations_exe.exe: C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/pugixml.lib
 Hole_Calculations_exe.exe: libObjects_lib.a
 Hole_Calculations_exe.exe: C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/freeglutd.lib
+Hole_Calculations_exe.exe: C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/gluid.lib
+Hole_Calculations_exe.exe: C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/freeglutd.lib
+Hole_Calculations_exe.exe: C:/Users/User/.vcpkg-clion/vcpkg/installed/x64-windows/debug/lib/glfw3dll.lib
 Hole_Calculations_exe.exe: CMakeFiles/Hole_Calculations_exe.dir/linkLibs.rsp
 Hole_Calculations_exe.exe: CMakeFiles/Hole_Calculations_exe.dir/objects1.rsp
 Hole_Calculations_exe.exe: CMakeFiles/Hole_Calculations_exe.dir/link.txt

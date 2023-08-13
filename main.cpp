@@ -1,40 +1,33 @@
 #include <iostream>
 #include <exception>
 #include "Algorithm.h"
-#include "Display.h"
+#include "DisplayTools.h"
 #include "io_tools/XMLParser.h"
 
 
-int main(int argc, char** argv) {
-    glutInit(&argc, argv);
+int main(int argc, char **argv) {
     try {
-        XMLParser parser("input.xml");
+        std::string fileName;
+        std::cout << "enter a file name, please" << std::endl;
+        std::cin >> fileName;
+        XMLParser parser(std::move(fileName));
         std::vector<Hole> holes(parser.GetHoleList());
-        for (const auto& it : holes) {
-            it.Print();
-        }
         std::vector<Alarm> alarms(parser.GetAlarmList());
-        for (const auto& it : alarms) {
-            it.Print();
-        }
         Field field = parser.GetField();
-        field.Print();
 
         if (!Algorithm::CalculateHoles(alarms, holes, field)) {
             std::cout << "Unfortunately, with the given data, it is impossible to locate all the holes" << std::endl;
             return 0;
         }
-        for (const auto& it : holes) {
-            it.Print();
-        }
-        run(argc, argv);
+        std::sort(holes.begin(), holes.end(), [](const Hole& a, const Hole& b) {
+            return a.GetId() < b.GetId();
+        });
+        XMLParser::CreateOutputXML(holes);
 
+        DisplayTools::FillInfo(std::move(field), std::move(alarms), std::move(holes));
+        DisplayTools::Run(argc, argv);
 
-
-
-
-
-    } catch (std::exception& ex) {
+    } catch (std::exception &ex) {
         std::cout << ex.what() << std::endl;
         return 1;
     }

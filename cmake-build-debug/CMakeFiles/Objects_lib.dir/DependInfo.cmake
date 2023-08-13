@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Hole_Calculations/Objects/Geometry/Circle.cpp" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Circle.cpp.obj" "gcc" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Circle.cpp.obj.d"
   "D:/Hole_Calculations/Objects/Geometry/Point.cpp" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj" "gcc" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj.d"
   "D:/Hole_Calculations/Objects/Geometry/Rectangle.cpp" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj" "gcc" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj.d"
-  "D:/Hole_Calculations/Objects/Geometry/Segment.cpp" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj" "gcc" "CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj.d"
   "D:/Hole_Calculations/Objects/Hole.cpp" "CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj" "gcc" "CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj.d"
   )
 

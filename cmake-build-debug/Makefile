@@ -191,29 +191,29 @@ Algorithm/Algorithm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm_lib.dir\build.make CMakeFiles/Algorithm_lib.dir/Algorithm/Algorithm.cpp.s
 .PHONY : Algorithm/Algorithm.cpp.s
 
-Display/Display.obj: Display/Display.cpp.obj
-.PHONY : Display/Display.obj
+Display/DisplayTools.obj: Display/DisplayTools.cpp.obj
+.PHONY : Display/DisplayTools.obj
 
 # target to build an object file
-Display/Display.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/Display.cpp.obj
-.PHONY : Display/Display.cpp.obj
+Display/DisplayTools.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj
+.PHONY : Display/DisplayTools.cpp.obj
 
-Display/Display.i: Display/Display.cpp.i
-.PHONY : Display/Display.i
+Display/DisplayTools.i: Display/DisplayTools.cpp.i
+.PHONY : Display/DisplayTools.i
 
 # target to preprocess a source file
-Display/Display.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/Display.cpp.i
-.PHONY : Display/Display.cpp.i
+Display/DisplayTools.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.i
+.PHONY : Display/DisplayTools.cpp.i
 
-Display/Display.s: Display/Display.cpp.s
-.PHONY : Display/Display.s
+Display/DisplayTools.s: Display/DisplayTools.cpp.s
+.PHONY : Display/DisplayTools.s
 
 # target to generate assembly for a file
-Display/Display.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/Display.cpp.s
-.PHONY : Display/Display.cpp.s
+Display/DisplayTools.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Display_lib.dir\build.make CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.s
+.PHONY : Display/DisplayTools.cpp.s
 
 Objects/Alarm.obj: Objects/Alarm.cpp.obj
 .PHONY : Objects/Alarm.obj
@@ -335,30 +335,6 @@ Objects/Geometry/Rectangle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Objects_lib.dir\build.make CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.s
 .PHONY : Objects/Geometry/Rectangle.cpp.s
 
-Objects/Geometry/Segment.obj: Objects/Geometry/Segment.cpp.obj
-.PHONY : Objects/Geometry/Segment.obj
-
-# target to build an object file
-Objects/Geometry/Segment.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Objects_lib.dir\build.make CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.obj
-.PHONY : Objects/Geometry/Segment.cpp.obj
-
-Objects/Geometry/Segment.i: Objects/Geometry/Segment.cpp.i
-.PHONY : Objects/Geometry/Segment.i
-
-# target to preprocess a source file
-Objects/Geometry/Segment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Objects_lib.dir\build.make CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.i
-.PHONY : Objects/Geometry/Segment.cpp.i
-
-Objects/Geometry/Segment.s: Objects/Geometry/Segment.cpp.s
-.PHONY : Objects/Geometry/Segment.s
-
-# target to generate assembly for a file
-Objects/Geometry/Segment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Objects_lib.dir\build.make CMakeFiles/Objects_lib.dir/Objects/Geometry/Segment.cpp.s
-.PHONY : Objects/Geometry/Segment.cpp.s
-
 Objects/Hole.obj: Objects/Hole.cpp.obj
 .PHONY : Objects/Hole.obj
 
@@ -446,9 +422,9 @@ help:
 	@echo ... Algorithm/Algorithm.obj
 	@echo ... Algorithm/Algorithm.i
 	@echo ... Algorithm/Algorithm.s
-	@echo ... Display/Display.obj
-	@echo ... Display/Display.i
-	@echo ... Display/Display.s
+	@echo ... Display/DisplayTools.obj
+	@echo ... Display/DisplayTools.i
+	@echo ... Display/DisplayTools.s
 	@echo ... Objects/Alarm.obj
 	@echo ... Objects/Alarm.i
 	@echo ... Objects/Alarm.s
@@ -464,9 +440,6 @@ help:
 	@echo ... Objects/Geometry/Rectangle.obj
 	@echo ... Objects/Geometry/Rectangle.i
 	@echo ... Objects/Geometry/Rectangle.s
-	@echo ... Objects/Geometry/Segment.obj
-	@echo ... Objects/Geometry/Segment.i
-	@echo ... Objects/Geometry/Segment.s
 	@echo ... Objects/Hole.obj
 	@echo ... Objects/Hole.i
 	@echo ... Objects/Hole.s

@@ -68,29 +68,29 @@ include CMakeFiles/Display_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Display_lib.dir/flags.make
 
-CMakeFiles/Display_lib.dir/Display/Display.cpp.obj: CMakeFiles/Display_lib.dir/flags.make
-CMakeFiles/Display_lib.dir/Display/Display.cpp.obj: CMakeFiles/Display_lib.dir/includes_CXX.rsp
-CMakeFiles/Display_lib.dir/Display/Display.cpp.obj: D:/Hole_Calculations/Display/Display.cpp
-CMakeFiles/Display_lib.dir/Display/Display.cpp.obj: CMakeFiles/Display_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Display_lib.dir/Display/Display.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Display_lib.dir/Display/Display.cpp.obj -MF CMakeFiles\Display_lib.dir\Display\Display.cpp.obj.d -o CMakeFiles\Display_lib.dir\Display\Display.cpp.obj -c D:\Hole_Calculations\Display\Display.cpp
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj: CMakeFiles/Display_lib.dir/flags.make
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj: CMakeFiles/Display_lib.dir/includes_CXX.rsp
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj: D:/Hole_Calculations/Display/DisplayTools.cpp
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj: CMakeFiles/Display_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj -MF CMakeFiles\Display_lib.dir\Display\DisplayTools.cpp.obj.d -o CMakeFiles\Display_lib.dir\Display\DisplayTools.cpp.obj -c D:\Hole_Calculations\Display\DisplayTools.cpp
 
-CMakeFiles/Display_lib.dir/Display/Display.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Display_lib.dir/Display/Display.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Hole_Calculations\Display\Display.cpp > CMakeFiles\Display_lib.dir\Display\Display.cpp.i
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Hole_Calculations\Display\DisplayTools.cpp > CMakeFiles\Display_lib.dir\Display\DisplayTools.cpp.i
 
-CMakeFiles/Display_lib.dir/Display/Display.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Display_lib.dir/Display/Display.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Hole_Calculations\Display\Display.cpp -o CMakeFiles\Display_lib.dir\Display\Display.cpp.s
+CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Hole_Calculations\Display\DisplayTools.cpp -o CMakeFiles\Display_lib.dir\Display\DisplayTools.cpp.s
 
 # Object files for target Display_lib
 Display_lib_OBJECTS = \
-"CMakeFiles/Display_lib.dir/Display/Display.cpp.obj"
+"CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj"
 
 # External object files for target Display_lib
 Display_lib_EXTERNAL_OBJECTS =
 
-libDisplay_lib.a: CMakeFiles/Display_lib.dir/Display/Display.cpp.obj
+libDisplay_lib.a: CMakeFiles/Display_lib.dir/Display/DisplayTools.cpp.obj
 libDisplay_lib.a: CMakeFiles/Display_lib.dir/build.make
 libDisplay_lib.a: CMakeFiles/Display_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Hole_Calculations\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libDisplay_lib.a"
