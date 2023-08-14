@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2023.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=C:\Users\User\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake -G "CodeBlocks - MinGW Makefiles" -S D:\Hole_Calculations -B D:\Hole_Calculations\cmake-build-debug
--- Configuring done (0.2s)
--- Generating done (0.1s)
--- Build files have been written to: D:/Hole_Calculations/cmake-build-debug

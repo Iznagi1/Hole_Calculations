@@ -1,2 +1,0 @@
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc libObjects_lib.a CMakeFiles/Objects_lib.dir/Objects/Alarm.cpp.obj CMakeFiles/Objects_lib.dir/Objects/Field.cpp.obj CMakeFiles/Objects_lib.dir/Objects/Hole.cpp.obj CMakeFiles/Objects_lib.dir/Objects/Geometry/Circle.cpp.obj CMakeFiles/Objects_lib.dir/Objects/Geometry/Rectangle.cpp.obj CMakeFiles/Objects_lib.dir/Objects/Geometry/Point.cpp.obj
-C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe libObjects_lib.a
